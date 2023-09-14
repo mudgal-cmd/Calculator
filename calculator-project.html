@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>
+      Calculator
+    </title>
+
+    <link rel="stylesheet" href="calculator.css">
+    
+  </head>
+
+  <body>
+    <p class="js-show-calculation show-calculation">
+      Show
+    </p>
+    <div class="first-row"> 
+      <button onclick="
+      storeCalculation(1);
+      " class="operands-btn">
+      1
+      </button>
+      <button onclick="
+        storeCalculation(2);
+      "class="operands-btn">
+        2
+      </button>
+      <button onclick="
+        storeCalculation(3);
+      "class="operands-btn">
+        3
+      </button>
+      <button onclick="
+        storeCalculation('+');
+      " class="operator-btn">
+        +
+      </button>
+    </div>
+
+    <div class="second-row">
+      <button onclick="
+      storeCalculation(4);
+      "class="operands-btn">
+      4
+      </button>
+      <button onclick="
+        storeCalculation(5);
+      "class="operands-btn">
+        5
+      </button>
+      <button onclick="
+        storeCalculation(6);
+      "class="operands-btn">
+        6
+      </button>
+      <button onclick="
+        storeCalculation('-');
+      "class="operator-btn">
+        -
+      </button>
+    </div>
+
+    <div class="third-row">
+      <button onclick="
+      storeCalculation(7);
+      "class="operands-btn">
+      7
+      </button>
+      <button onclick="
+        storeCalculation(8);
+      "class="operands-btn">
+        8
+      </button>
+      <button onclick="
+        storeCalculation(9);
+      "class="operands-btn">
+        9
+      </button>
+      <button onclick="
+        storeCalculation('*');
+      "class="operator-btn">
+        *
+      </button>
+    </div>
+
+    <div class="fourth-row">
+      </button>
+      <button onclick="
+        storeCalculation(0);
+      "class="operands-btn">
+        0
+      </button>
+      <button onclick="
+        storeCalculation('.');
+      "class="operands-btn">
+        .
+      </button>
+      <button onclick="
+      doCalculation();
+      // displayCalculation();
+      "class="operands-btn">
+        =
+      </button>
+
+      <button onclick="
+        storeCalculation('/');  
+      "class="operator-btn">
+        /
+      </button>
+    </div>
+
+    <div>
+      <button onclick="
+        localStorage.removeItem('calculateString');
+        console.log('Cleared..');
+        calculation = 0;
+        document.querySelector('.js-show-calculation').innerHTML = '';
+        " class="clear-calculation-btn">
+        Clear
+      </button>
+    </div>
+
+    <script src="calculator.js">
+
+    </script>
+  </body>
+</html>
